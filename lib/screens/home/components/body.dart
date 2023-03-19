@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shop_ui/screens/details/details_screen.dart';
 
 import '../../../constants.dart';
 import '../../../models/product.dart';
@@ -37,7 +38,17 @@ class Body extends StatelessWidget {
                 mainAxisSpacing: kDefaultPadding,
                 crossAxisSpacing: kDefaultPadding,
               ),
-              itemBuilder: (context, index) => ItemCard(product: products[index], onPress: (){}),
+              itemBuilder: (context, index) => ItemCard(
+                product: products[index],
+                onPress: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DetailsScreen(
+                      product: products[index],
+                    ),
+                  ),
+                ),
+              ),
             ),
           ),
         )
@@ -45,4 +56,3 @@ class Body extends StatelessWidget {
     );
   }
 }
-

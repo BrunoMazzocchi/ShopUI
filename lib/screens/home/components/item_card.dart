@@ -11,31 +11,37 @@ class ItemCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Expanded(
-          child: Container(
-            padding: const EdgeInsets.all(kDefaultPadding),
-            decoration: BoxDecoration(
-              color: product.color,
-              borderRadius: BorderRadius.circular(16),
+    return GestureDetector(
+      onTap: onPress,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(kDefaultPadding),
+                decoration: BoxDecoration(
+                  color: product.color,
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                child: Hero(
+                  tag: product.image ?? "",
+                  child: Image.asset(product.image ?? ""),
+                ),
+              ),
             ),
-            child: Image.asset(product.image ?? ""),
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: kDefaultPadding / 4),
-          child: Text(
-            product.title ?? "Not found",
-            style: const TextStyle(
-                color: kTextLightColor
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: kDefaultPadding / 4),
+              child: Text(
+                product.title ?? "Not found",
+                style: const TextStyle(
+                    color: kTextLightColor
+                ),
+              ),
             ),
-          ),
+            Text('\$${product.price.toString()}',
+                style: const TextStyle(fontWeight: FontWeight.bold))
+          ],
         ),
-        Text('\$${product.price.toString()}',
-            style: const TextStyle(fontWeight: FontWeight.bold))
-      ],
     );
   }
 }
