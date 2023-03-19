@@ -1,16 +1,16 @@
-# shop_ui
+# Shop UI
 
-A new Flutter project.
+A Flutter UI tutorial 
+<h1 align="center">
 
-## Getting Started
+<img src="https://user-images.githubusercontent.com/68037905/226148073-663e52ec-aca4-45eb-98d5-e10f0d7c9b45.png" width="170" height="350"/>
+<img src="https://user-images.githubusercontent.com/68037905/226148200-91b972b4-ea7d-4bad-b703-28a49b17b24f.gif" width="170" height="350"/>
+<img src="https://user-images.githubusercontent.com/68037905/226148074-ac043d5d-d1d1-4953-ba25-de7894bbcc6e.png" width="170" height="350"/>
 
-This project is a starting point for a Flutter application.
+</h1>
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+- [The Flutter Way: Online Shop App - Flutter UI - Speed Code](https://www.youtube.com/watch?v=XBKzpTz65Io)
